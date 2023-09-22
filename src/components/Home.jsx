@@ -15,7 +15,7 @@ function Home() {
       <Data />
       <Hero />
       <Places />
-      <section id='about'>
+      <section className=' container' id='about'>
       <About />
       </section>
       <Features/>

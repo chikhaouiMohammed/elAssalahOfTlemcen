@@ -22,7 +22,7 @@
     color: black;
   }
   .card-container {
-    max-height: 75vh; /* Set the desired maximum height */
+    max-height: 100vh; /* Set the desired maximum height */
     overflow: auto;
     transition: transform 0.3s ease; /* Add a transition for smooth sliding */
   }
@@ -320,10 +320,10 @@
 }
 @media (max-width: 520px) {
   #iframe{
-    width: 480px;
+    width: 400px;
   }
   #imagesList{
-    width: 480px;
+    width: 350px;
   }
 }
 @media (max-width: 495px) {
@@ -359,10 +359,21 @@
   }
 }
 
+@media (max-width: 515px) {
+  /* Target the custom ImageList component */
+  .custom-image-list {
+    /* Set the number of columns to 1 for smaller screens */
+    grid-template-columns: 1fr !important;
+  }
+}
 
 
 /* End Place */
 
+
+.slide-transition {
+  transition: transform 0.3s ease; /* You can adjust the duration and easing function as needed */
+}
 
 
 

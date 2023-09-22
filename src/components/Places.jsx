@@ -140,7 +140,7 @@ function Places() {
         <div id="content" className="flex flex-col gap-[100px] cursor-pointer overflow-hidden">
         <div
           id="cards"
-          className="flex mt-[100px] gap-[32px]"
+          className="flex mt-[100px] gap-[32px] slide-transition"
           ref={carosual}
         >
           {renderPlaces}

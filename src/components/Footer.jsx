@@ -22,7 +22,6 @@ function Footer() {
           <h3 style={fontRubik} className='text-[24px] mb-[16px]'>{t('menu')}</h3>
           <ul className=' flex flex-col gap-[12px]'>
             <li> <a href="#home">{t('home')}</a></li>
-            <li> <a href="/explore/*">{t('discover')}</a> </li>
             <li> <a href="#about">{t('about')}</a></li>
           </ul>
         </div>
