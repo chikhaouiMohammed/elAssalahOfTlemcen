@@ -123,9 +123,9 @@ function Discover() {
       <div className="container mx-auto">
         <div className="p-6 bg-transparent mt-34">
           {/* Search form */}
-          <div className="flex items-center mb-3">
-            <div className="w-[20%]">
-              <Dropdown id='language-btn' className="discover-custom-dropdown ml-10">
+          
+            <div id='category-drop' className="sm:w-[20%] mb-6">
+              <Dropdown className="discover-custom-dropdown">
                 <Dropdown.Toggle variant="success" id="dropdown-basic" className="text-xl">
                   {t(value  || 'category')}
                 </Dropdown.Toggle>
@@ -152,7 +152,7 @@ function Discover() {
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-          </div>
+        
           {/* Content */}
           <div className="card-container flex flex-wrap 2xl:justify-start items-center xl:justify-start gap-[30px] ">
             {/* cards */}

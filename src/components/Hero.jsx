@@ -78,7 +78,7 @@ function Hero() {
         </div>
       </div>
       <div className='w-full container mx-auto pt-[250px] text-white flex flex-col justify-center items-start gap-[16px]'>
-        <h1 style={fontPlayfair} className='leading-normal text-[84px]'>
+        <h1 id='hero-heading' style={fontPlayfair} className='leading-normal text-[84px]'>
           {t('startUnforgettableJourney')}
         </h1>
         <p style={fontRubik} className='text-[24px] leading-normal'>

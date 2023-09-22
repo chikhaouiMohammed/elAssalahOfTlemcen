@@ -129,6 +129,17 @@
   }
 }
 /* start Header */
+/* Start Hero */
+@media (max-width: 768px) {
+  #hero-heading {
+     font-size: 70px;
+  }
+}
+
+
+
+
+/* End Hero */
 /* Start About */
 @media (max-width: 768px) {
   #about-content {
@@ -142,9 +153,6 @@
      margin: auto;
   }
 }
-
-
-
 /* End About */
 /* Start Features */
 @media (max-width: 768px) {
@@ -245,6 +253,7 @@
 @media (max-width: 900px) {
   #footer-footer{
     padding: 100px 0;
+    padding-left: 50px;
     display: flex;
     justify-content: flex-start;
     width: 100%;
