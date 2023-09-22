@@ -132,7 +132,7 @@
 /* Start Hero */
 @media (max-width: 768px) {
   #hero-heading {
-     font-size: 70px;
+     font-size: 40px;
   }
 }
 
@@ -144,15 +144,26 @@
 @media (max-width: 768px) {
   #about-content {
      flex-direction: column;
+     padding: 0;
+     width: 100%;
   }
 }
 @media (max-width: 768px) {
   #about-side {
      flex-direction: column;
      width: fit-content;
-     margin: auto;
+     
   }
 }
+@media (max-width: 768px) {
+  #about-heading {
+     font-size: 40px;
+  }
+}
+
+
+
+
 /* End About */
 /* Start Features */
 @media (max-width: 768px) {

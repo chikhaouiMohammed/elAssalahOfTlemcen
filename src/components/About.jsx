@@ -39,10 +39,10 @@ function About() {
           </div>
         </div>
       </div>
-      <div id='about-content' className=' flex gap-[32px]'>
+      <div id='about-content' className=' flex gap-[32px] '>
         {/* about info */}
         <div className=' text-[#172432] my-[106.5px] '>
-          <h2 style={fontPlayfair} className='text-[54px] mb-[24px] text-center'>{t('aboutHeading')}</h2>
+          <h2 id='about-heading' style={fontPlayfair} className='text-[54px] mb-[24px] text-center'>{t('aboutHeading')}</h2>
           <div id='about-side' className=' flex gap-20 items-center'>
           <div className='w-[350px] h-[250px] mb-9' style={cardBackground(assalahWomen)}></div>
             <p style={fontRubik} className='text-[24px] leading-[52px] my-[24px] mb-10  w-[70%]'>{t('aboutText1')} </p>
