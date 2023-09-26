@@ -246,10 +246,11 @@
 @media (max-width: 768px) {
   #card{
     width: 350px;
-    height: 600px;
-    
+    height: 550px;
   }
 }
+
+
 /* End Places */
 /* Start Footer */
 @media (max-width: 900px) {
