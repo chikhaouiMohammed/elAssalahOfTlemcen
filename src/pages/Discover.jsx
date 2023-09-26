@@ -129,25 +129,27 @@ function Discover() {
                 <Dropdown.Toggle variant="success" id="dropdown-basic" className="text-xl">
                   {t(value  || 'category')}
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={() => {setValue('all'); setCategory('All');}} href="#/action-1">
                     {t('all')}
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={() => {setValue('customsAndTraditions'); setCategory('Customs and Traditions')}} href="#/action-2">
-                    {t('customsAndTraditions')}
+                  <Dropdown.Item onClick={() => {setValue('historical'); setCategory('0_Historical sites')}} href="#/action-3">
+                    {t('historical')}
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={() => {setValue('localMusic'); setCategory('Local Music')}} href="#/action-3">
-                    {t('localMusic')}
-                  </Dropdown.Item>
-                  <Dropdown.Item onClick={() => {setValue('touristic'); setCategory('Touristic')}} href="#/action-3">
+                  <Dropdown.Item onClick={() => {setValue('touristic'); setCategory('1_Tourist sites')}} href="#/action-3">
                     {t('touristic')}
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={() => {setValue('sportPaths'); setCategory('Sport Paths')}} href="#/action-3">
+                  <Dropdown.Item onClick={() => {setValue('sportPaths'); setCategory('2_Sport paths')}} href="#/action-3">
                     {t('sportPaths')}
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={() => {setValue('historical'); setCategory('Historical')}} href="#/action-3">
-                    {t('historical')}
+                  <Dropdown.Item onClick={() => {setValue('customsAndTraditions'); setCategory('3_Popular customs and traditions')}} href="#/action-2">
+                    {t('customsAndTraditions')}
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => {setValue('localMusic'); setCategory('4_Local music')}} href="#/action-3">
+                    {t('localMusic')}
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => {setValue('touristicBeaches'); setCategory('5_Tourist beaches')}} href="#/action-3">
+                    {t('touristicBeaches')}
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

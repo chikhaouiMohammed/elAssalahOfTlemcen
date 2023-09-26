@@ -48,6 +48,33 @@ function Place() {
         
       }, []);
 
+      function checkCategory(value){
+        if( value === '0_Historical sites' ){
+          if(i18n.language === 'en') return 'Historical sites'
+          else return 'مواقع تارخية'
+        }
+        if( value === '1_Tourist sites' ){
+          if(i18n.language === 'en') return 'Tourist sites'
+          else return 'مواقع سياحية'
+        }
+        if( value === '2_Sport paths' ){
+          if(i18n.language === 'en') return 'Sport Paths'
+          else return 'مسارات رياضية'
+        }
+        if( value === '3_Popular customs and traditions' ){
+          if(i18n.language === 'en') return 'Popular customs and traditions'
+          else return 'العادات و التقاليد الشعبية'
+        }
+        if( value === '4_Local music' ){
+          if(i18n.language === 'en') return 'Local music'
+          else return 'الموسيقى المحلية'
+        }
+        if( value === '5_Tourist beaches' ){
+          if(i18n.language === 'en') return 'Tourist beaches'
+          else return 'الشواطئ السياحية'
+        }
+      }
+
   useEffect(() => {
     if(currentPlace){
       if (placesList && !isNaN(index) && index >= 0 && index < placesList.length) {
@@ -61,8 +88,8 @@ function Place() {
                 <div>
                 <h1 className=' mb-5 text-5xl'>{i18n.language === 'ar' ? place.title.AR : place.title.EN }</h1>
                 <p className=' mb-5 font-semibold leading-8'>{i18n.language === 'ar' ? place.description.AR : place.description.EN }</p>
-                <h2 className=' mb-3 text-2xl font-medium'><span className=' text-3xl font-bold'>{t('wilaya')}: </span>{i18n.language === 'ar' ? 'نلمسان' : place.wilaya}</h2>
-                <h2 className=' mb-3 text-2xl font-medium'><span className=' text-2xl font-bold'>{t('category')}: </span>{i18n.language === 'ar' ? 'تاريخي' : place.categorie}</h2>
+                <h2 className=' mb-3 text-2xl font-medium'><span className=' text-3xl font-bold'>{t('wilaya')}: </span>{i18n.language === 'ar' ? 'تلمسان' : place.wilaya}</h2>
+                <h2 className=' mb-3 text-2xl font-medium'><span className=' text-2xl font-bold'>{t('category')}: </span>{checkCategory(place.categorie)}</h2>
                 <h2 className=' mb-3 text-2xl font-medium'><span className=' text-2xl font-bold'>{t('status')}: </span>{i18n.language === 'ar' ? 'مفتوح للزوار' : place.status}</h2>
                 </div>
                 <div id='iframe' className=' w-[600px]'>
